@@ -5,6 +5,9 @@ module NullDB
   end
 end
 
+# This module will not work on PAdrino!
+# the reason is the after :all hook
+
 module NullDB::RSpec::NullifiedDatabase
   NullDBAdapter = ActiveRecord::ConnectionAdapters::NullDBAdapter
 
